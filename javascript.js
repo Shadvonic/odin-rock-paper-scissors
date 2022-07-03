@@ -2,7 +2,7 @@
 
 let userInput;  
 
-// console.log(userInput); 
+// alert(userInput); 
 let computerChoice = computerPlay(); 
 
 
@@ -24,7 +24,7 @@ function computerPlay() {
     // return random selection
     return computerSelection
 }
-// console.log(computerPlay()); 
+// alert(computerPlay()); 
 
 
 function playRound(userInput,computerChoice) {
@@ -34,34 +34,34 @@ function playRound(userInput,computerChoice) {
 
     if(userInput === 'rock' && computerChoice === 'scissors') {
         userWins += 1;
-        console.log("You win! Rock beats Scissors");
+        alert("You win! Rock beats Scissors");
       
     }  else if (computerChoice === "rock" && userInput === "scissors") {
         cpuWins += 1
-        console.log("You lose! Rock beats Scissors");
+        alert("You lose! Rock beats Scissors");
        
     } else if(userInput === "paper" && computerChoice === "rock") {
         userWins += 1;
-        console.log("You win! Paper beats Rock"); 
+        alert("You win! Paper beats Rock"); 
        
     } else if(computerChoice === "paper" && userInput === "rock") {
         cpuWins += 1
-        console.log("You lose! Paper beats Rock"); 
+        alert("You lose! Paper beats Rock"); 
         
     } else if(userInput === "scissors" && computerChoice === "paper") {
         userWins += 1;
-        console.log("You win! Scissors beats Paper");
+        alert("You win! Scissors beats Paper");
        
     } else if(computerChoice === "scissors" && userInput === "paper") {
         cpuWins += 1
-        console.log("You lose! Scissors beats Paper");
+        alert("You lose! Scissors beats Paper");
         
     } else {
-        console.log("Draw! Nobody wins."); 
+        alert("Draw! Nobody wins."); 
     }
 
-    console.log(`User score: ${userWins}`);
-    console.log(`Computer score ${cpuWins}`);
+    alert(`User score: ${userWins}`);
+    alert(`Computer score ${cpuWins}`);
    
 }
 
@@ -71,13 +71,13 @@ function game() {
     }
 
     if(userWins > cpuWins) {
-        console.log(`User wins! With ${userWins} wins`);
+        alert(`User wins! With ${userWins} wins`);
       
     } else {
-        console.log(`Computer wins! With ${cpuWins} wins`);
+        alert(`Computer wins! With ${cpuWins} wins`);
         
     }
     
 }
 
-console.log(game());
+alert(game());
